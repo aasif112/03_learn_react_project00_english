@@ -29,7 +29,7 @@ jobs:
          
  # make a build folder:
       - name: Creating build
-        run: yarn build
+        run: npm run build
 
 # Third install surge:  
       - name: Installing Surge
