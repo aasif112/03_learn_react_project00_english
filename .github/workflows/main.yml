@@ -16,7 +16,7 @@ jobs:
 
 # First install Node.js:
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4.0.3
+        uses: actions/setup-node@v4-beta
         with:
          version: '20'
 
@@ -32,7 +32,7 @@ jobs:
 
 # Third install surge:  
       - name: Installing Surge
-        run: yarn -g surge
+        run: npm install --global surge
 
 # Finally Deploy on surge:
       - name: Creating CNAME file
