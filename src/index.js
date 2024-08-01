@@ -8,7 +8,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // New Tags Created:
-// import Pic from './Pic';
+
 import App2 from './App2';
 import Offer from './product';
 
@@ -39,7 +39,7 @@ root.render(
 );
 
 // <div>HELLO WORLD! INDEX.JS</div>
-{/* <Pic /> */}
+
 
 
 
