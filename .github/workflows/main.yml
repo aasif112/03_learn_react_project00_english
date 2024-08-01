@@ -34,6 +34,8 @@ jobs:
       - name: Installing Surge
         run: yarn -g surge
 
-# Finally Deploy on surge:          
+# Finally Deploy on surge:
+      - name: Creating CNAME file
+        run: echo 03_learn_react_english.surge.sh > CNAME          
       - name: Deploy on surge
-        run: surge ./build 03_learn_react_english.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build  --token ${{secrets.SURGE_TOKEN}}
