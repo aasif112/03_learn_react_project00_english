@@ -8,7 +8,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // New Tags Created:
-import Pic from './Pic';
+// import Pic from './Pic';
 import App2 from './App2';
 import Offer from './product';
 
