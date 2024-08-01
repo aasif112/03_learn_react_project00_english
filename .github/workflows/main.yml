@@ -16,7 +16,7 @@ jobs:
 
 # First install Node.js:
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4-beta
+        uses: actions/setup-node@v2-beta
         with:
          version: '20'
 
