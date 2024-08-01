@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+
+// NEW CSS STYLE FILE:
+import './style.css'
+
+
+function App({name, city, age }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="appjs">
+    <h4>--------------START App.js------------</h4>
+      <div>
+      <h4>  Hello World! APP.JS  </h4>
+      <h1>I am {name} from {city} </h1>
+      <h1>I am {age} next year I will complete my course at the age of {age +1} </h1>
+
+      </div>
+    <h4>--------------END App.js------------</h4>
     </div>
   );
 }
