@@ -3,9 +3,8 @@ name:  Deploy basic React App page on Surge _ Class03_English
 on:
   push: 
     branches: [ master ]
-  pull_request: 
-    branches: [ master]
-
+ 
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,11 +28,11 @@ jobs:
          
  # make a build folder:
       - name: Creating build
-        run: npm run build
+        run: yarn build
 
 # Third install surge:  
       - name: Installing Surge
-        run: npm install -g surge
+        run: yarn -g surge
 
 # Finally Deploy on surge:          
       - name: Deploy on surge
