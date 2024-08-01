@@ -38,4 +38,4 @@ jobs:
       - name: Creating CNAME file
         run: echo 03_learn_react_english.surge.sh > CNAME          
       - name: Deploy on surge
-        run: surge ./public  --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build  --token ${{secrets.SURGE_TOKEN}}
